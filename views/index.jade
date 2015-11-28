@@ -1,0 +1,16 @@
+extends layout
+
+block append scripts
+  script(src="javascripts/index.js")
+  link(rel="stylesheet" type="text/css" href="stylesheets/index.css")
+
+block content
+  div(id="app" ng-controller="lyricsApp" layout="column")
+    div(id="splash")
+      div(id="title") {{ title }}
+      div(id="subtitle") {{ subtitle }}
+      form(ng-submit="sendRequest()")
+        input(id="search_bar" type="text" ng-model="searchTerm")
+    div(id="content")
+      ul(id="song_list" ng-repeat="s in songs" layout="row")
+        li {{ name }}

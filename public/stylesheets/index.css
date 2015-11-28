@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+}
+
+#splash {
+	text-align: center;
+	background-color: lightsteelblue;
+	height: 30vh;
+}
+
+#title {
+	margin-top: 5vh;
+	font-size: 300%;
+}
+
+#subtitle {
+	margin-top: 4vh;
+}
+
+#search_bar {
+	margin-top: 4vh;
+	width: 25vw;
+	height: 3vh;
+}
+
+#content {
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: black;
+	height: 70vh;
+}
+
+#song_list {
+	list-style-type: none;
+}

@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    block scripts
+      //Angular scripts
+      script(src="lib/angular/angular.min.js")
+      
+      //Angular material scripts and css
+      link(rel="stylesheet" type="text/css" href="lib/angular-material/angular-material.min.css")
+      link(rel="stylesheet" type="text/css" href="lib/angular-material/angular-material.layouts.min.css")
+      script(src="lib/angular-aria/angular-aria.min.js")
+      script(src="lib/angular-animate/angular-animate.min.js")
+      script(src="lib/angular-material/angular-material.min.js")
+  body(ng-app="mainModule")
+    block content
